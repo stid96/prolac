@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prolac</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            background-color: #f8f9fa;
+            height: 100vh;
+        }
+        .header {
+            background-color: #3949FA;
+            color: white;
+        }
+        .content {
+            background-color: #91DFFC;
+            height: 100vh;
+        }
+        .logo {
+            height: 40px;}
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <div class="row header align-items-center py-2 px-3">
+            <div class="col d-flex justify-content-start align-items-center">
+                <img src="imagenes/logo_prolac-removebg-preview.png" alt="logo" class="me-2 logo">
+                <span>
+                    <strong>Usuario:</strong> Harold Steven Garces Orozco <br>
+                    <strong>Cargo:</strong> Administrador <br>
+                    <strong>Sede:</strong> Popayán 01<br
+                    <span>Fecha: 16/0/2024 5:00 PM</span>
+                </span>
+            </div>
+            <div class="col text-end"></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="pagina principal.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">modo</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="pagina principal.html">atras</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="#"> siguiente</a>
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">usuario</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">cerrar sesion</a>
+                    </li>
+            </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar p-3">
+                <h5>Menú de Módulos</h5>
+                <ul class="list-unstyled">
+                    <!-- Clientes con desplegable -->
+                    <li>
+                        <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#clientesMenu" role="button" aria-expanded="false" aria-controls="clientesMenu">
+                            Clientes
+                        </a>
+                        <ul class="collapse list-unstyled ps-3" id="clientesMenu">
+                            <li><a href="#" class="text-dark text-decoration-none">Registrar cliente</a></li>
+                            <li><a href="mod-clien-consu.html" class="text-dark text-decoration-none">consultar cliente</a></li>
+                        </ul>
+                    </li>
+                    <!-- Otros módulos -->
+                    <li><a href="#" class="text-dark text-decoration-none">Inventario</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Facturación</a></li>
+
+                    <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#usuariosMenu" role="button" aria-expanded="false" aria-controls="usuariosMenu">
+                        Usuarios
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="usuariosMenu">
+                        <li><a href="mod-usu-crear.html" class="text-dark text-decoration-none">crear usuarios</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">modificar usuarios</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">consultar usuarios</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-10 content d-flex justify-content-center align-items-center">
+                <div class="form-container">
+                    <form class="registration-form">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Value" class="form-control mb-2">
+                        
+                        <label for="document">Número de documento</label>
+                        <input type="text" id="document" placeholder="Value" class="form-control mb-2">
+                        
+                        <label for="email">Correo</label>
+                        <input type="email" id="email" placeholder="Value" class="form-control mb-2">
+                        
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" placeholder="Value" class="form-control mb-2">
+                        
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Value" class="form-control mb-2">
+                        
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Value" class="form-control mb-2">
+                        
+                        <label for="position">Cargo</label>
+                        <input type="text" id="position" placeholder="Value" class="form-control mb-3">
+                        
+                        <button type="submit" class="btn btn-dark w-100">Registrar</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
